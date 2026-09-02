@@ -5,6 +5,10 @@ description: Grill the user relentlessly about a plan, decision, or idea. Use wh
 
 Interview the user relentlessly until you reach a shared understanding. Map this as a **design tree**: every decision branches into the decisions that hang off it.
 
+## Ask via tool
+
+Apply the repository's **User questions** rule to each frontier round. When a question tool is available, submit the whole frontier as one tool call when supported, preserve the recommended answer in the tool's options, and allow free-form answers. Use the text format below when no question tool is available.
+
 Work the tree in **rounds**. The **frontier** is every decision whose prerequisites are already settled: the questions you can ask _now_ without guessing at answers you haven't heard yet. Ask the whole frontier in one round: number each question and give your recommended answer. Then wait for the user's answers before the next round.
 
 Format a round like so:
